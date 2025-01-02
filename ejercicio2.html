@@ -10,9 +10,15 @@
 </head>
 
 <body>
-
   <div class="container mt-5 text-center">
     <h1>Generador de sudokus</h1>
+  </div>
+
+  <div class="container mt-5 text-center" id="modo">
+    <h3></h3>
+  </div>
+
+  <div class="container mt-1 text-center" id="sudoku">
     <table class="table table-primary table-striped text-center mt-5 " style="width: 30rem; margin: 0 auto;">
       <!-- Fila 0 -->
       <tr>
@@ -123,8 +129,27 @@
         <td class="border-start-0 border-top-0 border-dark border-3" id="8,8"></td>
       </tr>
     </table>
-
   </div>
+
+  <div class="container mt-5 text-center" id="dificultad">
+    <h4>Selecciona dificultad</h4>
+    <a href="#" class="btn btn-success" role="button" data-bs-toggle="button" onclick="muestraSudoku('facil')">Fácil</a>
+    <a href="#" class="btn btn-warning" role="button" data-bs-toggle="button" onclick="muestraSudoku('media')">Media</a>
+    <a href="#" class="btn btn-danger" role="button" data-bs-toggle="button" onclick="muestraSudoku('alta')">Alta</a>
+  </div>
+
+  <div class="container mt-5 text-center" id="solucion">
+    <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button" onclick="muestraSudoku('entero')">Mostrar
+      sudoku completo</a>
+  </div>
+
+  <div class="container mt-5 text-center" id="reiniciar">
+    <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button" onclick="reiniciarSudoku()">Reiniciar</a>
+  </div>
+
+
+
+
 
   <script src="js/ejercicio2.js"></script>
 </body>
