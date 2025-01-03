@@ -230,6 +230,7 @@ function muestraSudoku(dificultad) {
       } else {
         // Mantenemos la casilla visible
         document.getElementById(i + "," + j).innerText = sudoku[i][j];
+        document.getElementById(i + "," + j).style.cssText = "font-weight: bold; color: blue;";
       }
     }
   }
